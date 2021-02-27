@@ -3,6 +3,9 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import './database'
 import { router } from './routes';
+import createConnection from './database';
+
+createConnection();
 
 const app = express();
 
